@@ -14,14 +14,15 @@ class GameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func rockButton(_ sender: UIButton) {
+    @IBAction func rockButtonTap(_ sender: UIButton) {
         print("Rock")
+        
     }
     
-    @IBAction func paperButton(_ sender: UIButton) {
+    @IBAction func paperButtonTap(_ sender: UIButton) {
         print("Paper")
     }
-    @IBAction func scissorsButton(_ sender: UIButton) {
+    @IBAction func scissorsButtonTap(_ sender: UIButton) {
         print("Scissors")
     }
 }

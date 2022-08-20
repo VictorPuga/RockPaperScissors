@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YQJ-Ul-fSe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YQJ-Ul-fSe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,16 +24,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="352" height="122.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="olm-pf-hV5" userLabel="Player Col">
-                                                <rect key="frame" x="0.0" y="38" width="176" height="47"/>
+                                                <rect key="frame" x="0.0" y="36" width="176" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OG-zl-r2M">
-                                                        <rect key="frame" x="0.0" y="0.0" width="176" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="176" height="26.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U31-kK-gIf" userLabel="PlayerPoints">
-                                                        <rect key="frame" x="0.0" y="23" width="176" height="24"/>
+                                                        <rect key="frame" x="0.0" y="26.5" width="176" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -41,16 +41,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1H6-2C-BBl" userLabel="CPU Col">
-                                                <rect key="frame" x="176" y="37" width="176" height="48.5"/>
+                                                <rect key="frame" x="176" y="35.5" width="176" height="52"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRs-tA-dDQ" userLabel="CPU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="176" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="176" height="26.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLE-mC-UHS" userLabel="CPUPoints">
-                                                        <rect key="frame" x="0.0" y="23" width="176" height="25.5"/>
+                                                        <rect key="frame" x="0.0" y="26.5" width="176" height="25.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -71,34 +71,40 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wN-e0-HDi" userLabel="Row1">
                                         <rect key="frame" x="0.0" y="122.5" width="352" height="245.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUy-Px-DMM">
-                                                <rect key="frame" x="0.0" y="112" width="105.5" height="22"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="rockButton"/>
-                                                <state key="normal" title="Rock" image="octagon.fill" catalog="system"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUy-Px-DMM" userLabel="Rock Button">
+                                                <rect key="frame" x="0.0" y="100" width="105.5" height="106"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="rockButton" label="Rock"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uUy-Px-DMM" secondAttribute="height" id="Ko9-gp-7jg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="Hexagon Fill" symbolScale="large" renderingMode="template"/>
+                                                </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfe-7j-Uis">
-                                                <rect key="frame" x="123" y="112" width="106" height="22"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="paperButton"/>
-                                                <state key="normal" title="Paper" image="hand.raised.fill" catalog="system"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfe-7j-Uis" userLabel="Paper Button">
+                                                <rect key="frame" x="123" y="0.0" width="106" height="100"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="paperButton" label="Paper"/>
+                                                <state key="normal" image="Hand Raised Fill"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv8-tr-QwY">
-                                                <rect key="frame" x="246.5" y="112" width="105.5" height="22"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="scissorsButton"/>
-                                                <state key="normal" title="Scissors" image="scissors" catalog="system"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv8-tr-QwY" userLabel="ScissorsButton">
+                                                <rect key="frame" x="246.5" y="100" width="105.5" height="100"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="scissorsButton" label="Scissors"/>
+                                                <state key="normal" image="Scissors"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <constraints>
                                             <constraint firstItem="Pv8-tr-QwY" firstAttribute="trailing" secondItem="5wN-e0-HDi" secondAttribute="trailing" id="2Pu-rM-3hd"/>
                                             <constraint firstItem="Gfe-7j-Uis" firstAttribute="centerX" secondItem="5wN-e0-HDi" secondAttribute="centerX" id="BMe-re-g6c"/>
-                                            <constraint firstItem="uUy-Px-DMM" firstAttribute="centerY" secondItem="5wN-e0-HDi" secondAttribute="centerY" id="HMU-Dl-dYB"/>
-                                            <constraint firstItem="Pv8-tr-QwY" firstAttribute="centerY" secondItem="5wN-e0-HDi" secondAttribute="centerY" id="KbK-Rh-tYG"/>
                                             <constraint firstItem="Pv8-tr-QwY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gfe-7j-Uis" secondAttribute="trailing" id="Q3E-Be-egD"/>
                                             <constraint firstItem="uUy-Px-DMM" firstAttribute="width" secondItem="5wN-e0-HDi" secondAttribute="width" multiplier="0.3" id="QTm-bQ-2i3"/>
+                                            <constraint firstItem="Pv8-tr-QwY" firstAttribute="top" secondItem="Gfe-7j-Uis" secondAttribute="bottom" id="TM3-XF-g4r"/>
                                             <constraint firstItem="uUy-Px-DMM" firstAttribute="leading" secondItem="5wN-e0-HDi" secondAttribute="leading" id="U8h-kv-xmg"/>
+                                            <constraint firstItem="Gfe-7j-Uis" firstAttribute="top" secondItem="5wN-e0-HDi" secondAttribute="top" id="XCC-W0-X26"/>
                                             <constraint firstItem="Gfe-7j-Uis" firstAttribute="width" secondItem="5wN-e0-HDi" secondAttribute="width" multiplier="0.3" id="c2F-lF-nLn"/>
                                             <constraint firstItem="uUy-Px-DMM" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Gfe-7j-Uis" secondAttribute="leading" id="eE8-48-Eof"/>
-                                            <constraint firstItem="Gfe-7j-Uis" firstAttribute="centerY" secondItem="5wN-e0-HDi" secondAttribute="centerY" id="j0V-Wb-ivm"/>
+                                            <constraint firstItem="uUy-Px-DMM" firstAttribute="top" secondItem="Gfe-7j-Uis" secondAttribute="bottom" id="jCf-Ow-ZqJ"/>
                                             <constraint firstItem="Pv8-tr-QwY" firstAttribute="width" secondItem="5wN-e0-HDi" secondAttribute="width" multiplier="0.3" id="zfQ-ni-Kyz"/>
                                         </constraints>
                                     </view>
@@ -159,9 +165,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hand.raised.fill" catalog="system" width="128" height="124"/>
-        <image name="octagon.fill" catalog="system" width="128" height="112"/>
-        <image name="scissors" catalog="system" width="128" height="92"/>
+        <image name="Hand Raised Fill" width="100" height="100"/>
+        <image name="Hexagon Fill" width="100" height="100"/>
+        <image name="Scissors" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
