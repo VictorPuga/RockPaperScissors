@@ -8,13 +8,36 @@
 import Foundation
 
 class Game {
-    func buttonClicked(_ move: GameMove) {
-        print(move)
-    }
-}
+  let cpu = Player()
+  var playerPoints = 0
+  var cpuPoints = 0
 
-enum GameMove: String {
-    case rock
-    case paper
-    case scissors
+  func buttonClicked(_ playerMove: GameMove) -> Rules.WinnerIndex {
+    let winner = makeCPUMove(playerMove)
+    updatePoints(winner)
+    
+    return winner
+  }
+
+  func resetGame() {
+    playerPoints = 0
+    cpuPoints = 0
+  }
+
+  private func makeCPUMove(_ playerMove: GameMove) -> Rules.WinnerIndex {
+    let cpuMove = cpu.randomMove()
+    let winner = Rules.evaluateWinner(playerMove, cpuMove)
+    return winner
+  }
+
+  private func updatePoints(_ winner: Rules.WinnerIndex) {
+    switch winner {
+      case .one:
+        playerPoints += 1
+      case .two:
+        cpuPoints += 1
+      case .tie:
+        break
+    }
+  }
 }

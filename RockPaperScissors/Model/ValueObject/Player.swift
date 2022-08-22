@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class Player {
+  func randomMove() -> GameMove {
+    let move = GameMove.allCases.randomElement()
+    return move!
+  }
+}
