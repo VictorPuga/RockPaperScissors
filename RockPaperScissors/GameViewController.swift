@@ -8,22 +8,32 @@
 import UIKit
 
 class GameViewController: UIViewController {
-
+    let game = Game()
+    
+    @IBOutlet weak var playerPoints: UILabel!
+    @IBOutlet weak var cpuPoints: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
 
     @IBAction func rockButtonTap(_ sender: UIButton) {
-        print("Rock")
-        
+        game.buttonClicked(.rock)
+        resultLabel.text = GameMove.rock.rawValue
     }
     
     @IBAction func paperButtonTap(_ sender: UIButton) {
-        print("Paper")
+        game.buttonClicked(.paper)
+        resultLabel.text = GameMove.paper.rawValue
     }
+    
     @IBAction func scissorsButtonTap(_ sender: UIButton) {
-        print("Scissors")
+        game.buttonClicked(.scissors)
+        resultLabel.text = GameMove.scissors.rawValue
     }
 }
 
