@@ -8,16 +8,16 @@
 import UIKit
 
 class GameViewController: UIViewController {
+  /// Game instance active for all the app's lifespan
   let game = Game()
-    
+  
+  // MARK: Outlets
+
   @IBOutlet var playerPoints: UILabel!
   @IBOutlet var cpuPoints: UILabel!
   @IBOutlet var resultLabel: UILabel!
-    
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
-  }
+  
+  // MARK: Actions
     
   @IBAction func rockButtonTap(_ sender: UIButton) {
     let winner = game.buttonClicked(.rock)
@@ -35,12 +35,15 @@ class GameViewController: UIViewController {
   }
   
   @IBAction func restartTap(_ sender: UIButton) {
-    print("tap")
     game.resetGame()
     updateUI(nil)
   }
   
-  func updateUI(_ winner: Rules.WinnerIndex?) {
+  // MARK: Methods
+  
+  /// Update the view's UI using the game's current values
+  /// - Parameter winner: Player that won the round. Can be can be `nil` when restarting the game
+  private func updateUI(_ winner: Rules.WinnerIndex?) {
     playerPoints.text = "\(game.playerPoints)"
     cpuPoints.text = "\(game.cpuPoints)"
     

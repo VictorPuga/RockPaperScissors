@@ -7,7 +7,9 @@
 
 import Foundation
 
+/// CPU Player
 class Player {
+  /// Generate a random move for the player
   func randomMove() -> GameMove {
     let move = GameMove.allCases.randomElement()
     return move!
