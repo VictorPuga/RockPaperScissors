@@ -20,17 +20,17 @@ class GameViewController: UIViewController {
   // MARK: Actions
     
   @IBAction func rockButtonTap(_ sender: UIButton) {
-    let winner = game.buttonClicked(.rock)
+    let winner = game.buttonTapped(.rock)
     updateUI(winner)
   }
     
   @IBAction func paperButtonTap(_ sender: UIButton) {
-    let winner = game.buttonClicked(.paper)
+    let winner = game.buttonTapped(.paper)
     updateUI(winner)
   }
     
   @IBAction func scissorsButtonTap(_ sender: UIButton) {
-    let winner = game.buttonClicked(.scissors)
+    let winner = game.buttonTapped(.scissors)
     updateUI(winner)
   }
   

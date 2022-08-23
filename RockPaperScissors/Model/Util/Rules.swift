@@ -11,7 +11,7 @@ import Foundation
 class Rules {
   /// Result matrix.
   /// Player 1 = rows, Player 2 = columns.
-  /// Retrieved from [stanford.edu](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/psr.html)
+  /// Retrieved from [cs.stanford.edu](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/psr.html).
   private static let matrix: [[WinnerIndex]] = [
     [.tie, .two, .one],
     [.one, .tie, .two],
