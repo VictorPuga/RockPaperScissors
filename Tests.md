@@ -1,12 +1,38 @@
 # Tests
 
-... (Research) ...
+- **Unit tests**:
+  They are focused to the most atomic level of code (generally functions).
+  Unit tests are used to verify individual functionality.
+- **Integration tests**:
+  Used to combine different modules or units of code.
+  They are a way to test if different units are working correctly together.
+- **System tests**:
+  Tests that encompass the whole system, from UI to business logic.
+- **Regression tests**:
+  These type of tests are all the unit tests that have been combined throughout the time.
+  When a change is added to the code, these tests are useful to verify if all other
+  modules work correctly, of if they have been affected.
+- **Automated tests**:
+  All of the examples above can be performed manually, or they can be automated.
+  If the frameworks allows it, the developer can write tests that verify the program's behavior
+  with predefined inputs and expected outputs.
+- **Edge case tests**:
+  They are a testing technique that focuses on using the most extreme inputs,
+  including unexpected ones, to ensure that the program behaves correctly in these situations.
+
+### Tools
+
+```
+// TODO
+```
 
 ## Test cases
 
-## User stories
+### User stories
 
-...
+- As a user, when I tap the rock button, I expect the computer to select a move, and view a result
+- As a user, when I choose rock and the computer chooses scissors, I expect to win a point (etc.)
+- As a user, when I tap the reset button, I expect to see all points reset to 0
 
 ### Unit tests
 
@@ -52,7 +78,7 @@
 
 #### Tie
 
-**ID:** P00
+**ID:** R00
 
 **Scenario:** When both players choose the same move, it should be a tie
 
@@ -209,7 +235,7 @@
 | `G00` |   ✅   |
 | `G01` |   ✅   |
 | `G02` |   ✅   |
-| `P00` |   ✅   |
+| `R00` |   ✅   |
 | `R01` |   ✅   |
 | `R02` |   ✅   |
 | `R03` |   ✅   |
@@ -221,3 +247,8 @@
 | `S04` |   ✅   |
 
 ![Tests image](./Tests-image.png)
+
+## References:
+
+Software Testing Help (August 7, 2022). Types Of Software Testing: Different Testing Types With Details.
+Retrieved on August 23, 2022, from https://www.softwaretestinghelp.com/types-of-software-testing/
