@@ -9,6 +9,7 @@
 import XCTest
 
 class RulesTests: XCTestCase {
+  /// Test ID: `R00`. Read the documentation for more.
   func testGameRulesTie() {
     let move1 = GameMove.rock
     let move2 = GameMove.rock
@@ -18,6 +19,7 @@ class RulesTests: XCTestCase {
     XCTAssertEqual(result, .tie)
   }
 
+  /// Test ID: `R01`. Read the documentation for more.
   func testGameRulesPlayerOne() {
     let move1 = GameMove.paper
     let move2 = GameMove.rock
@@ -27,6 +29,7 @@ class RulesTests: XCTestCase {
     XCTAssertEqual(result, .one)
   }
 
+  /// Test ID: `R02`. Read the documentation for more.
   func testGameRulesPlayerTwo() {
     let move1 = GameMove.rock
     let move2 = GameMove.paper
@@ -36,6 +39,7 @@ class RulesTests: XCTestCase {
     XCTAssertEqual(result, .two)
   }
 
+  /// Test ID: `R03`. Read the documentation for more.
   func testGameRulesAllCombinations() {
     let combinations: [(GameMove, GameMove)] = [
       (.rock, .rock), (.rock, .paper), (.rock, .scissors),

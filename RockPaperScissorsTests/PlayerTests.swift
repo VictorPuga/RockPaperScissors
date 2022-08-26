@@ -9,6 +9,7 @@
 import XCTest
 
 class PlayerTests: XCTestCase {
+  /// Test ID: `P00`. Read the documentation for more.
   func testRandom() {
     let move = Player().randomMove()
     let results: [GameMove] = [.rock, .paper, .scissors]

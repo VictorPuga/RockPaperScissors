@@ -9,6 +9,7 @@
 import XCTest
 
 class GameTests: XCTestCase {
+  /// Test ID: `G00`. Read the documentation for more.
   func testButtonTappedResult() {
     let move: GameMove = .rock
     let winner = Game().buttonTapped(move)
@@ -17,6 +18,7 @@ class GameTests: XCTestCase {
     XCTAssert(results.contains(winner))
   }
 
+  /// Test ID: `G01`. Read the documentation for more.
   func testButtonTappedPoints() {
     let game = Game()
     let move: GameMove = .rock
@@ -34,6 +36,7 @@ class GameTests: XCTestCase {
     }
   }
 
+  /// Test ID: `G02`. Read the documentation for more.
   func testResetGame() {
     let game = Game()
     let player = Player()

@@ -19,6 +19,7 @@ class RockPaperScissorsUITests: XCTestCase {
 //    }
 //  }
 
+  /// Test ID: `S00`. Read the documentation for more.
   func testInitialPoints() {
     let app = XCUIApplication()
     app.launch()
@@ -31,6 +32,7 @@ class RockPaperScissorsUITests: XCTestCase {
     XCTAssertEqual(resultLabel.label, "Tap to play the game")
   }
 
+  /// Test ID: `S01`. Read the documentation for more.
   func testRockButtonTap() {
     let app = XCUIApplication()
     app.launch()
@@ -45,6 +47,7 @@ class RockPaperScissorsUITests: XCTestCase {
     XCTAssertNotEqual(cpuPoints.label, "0")
   }
 
+  /// Test ID: `S02`. Read the documentation for more.
   func testPaperButtonTap() {
     let app = XCUIApplication()
     app.launch()
@@ -59,6 +62,7 @@ class RockPaperScissorsUITests: XCTestCase {
     XCTAssertNotEqual(cpuPoints.label, "0")
   }
 
+  /// Test ID: `S03`. Read the documentation for more.
   func testScissorsButtonTap() {
     let app = XCUIApplication()
     app.launch()
@@ -73,6 +77,7 @@ class RockPaperScissorsUITests: XCTestCase {
     XCTAssertNotEqual(cpuPoints.label, "0")
   }
 
+  /// Test ID: `S04`. Read the documentation for more.
   func testResetGame() {
     let app = XCUIApplication()
     app.launch()
